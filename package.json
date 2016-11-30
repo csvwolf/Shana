@@ -1,0 +1,15 @@
+{
+  "name": "shana",
+  "version": "1.0.0",
+  "description": "Just A Resume Generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.ljh.io/sky-plus/Shana.git"
+  },
+  "author": "SkyAo",
+  "license": "MIT"
+}
