@@ -1,0 +1,38 @@
+html, body {
+  background: #FEFEFE;
+  height: 100%;
+  font-family: Arial, 'Simsun', sans-serif;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 8px 0;
+  padding: 0;
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+}
+
+p, span, div {
+  font-family: Arial, 'Simsun', sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  min-height: 100%;
+}
+
+.container {
+  flex: 2.5;
+  min-height: 100%;
+  padding: 10px;
+}
+
+.sidebar {
+  flex: 1;
+  min-height: 100%;
+  border-left: 1px dashed #ccc;
+}
