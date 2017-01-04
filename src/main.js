@@ -8,9 +8,11 @@ import data from './data.json';
 const setExperiences = function(experiences) {
   let body = experiences.reduce((prev, item) => {
     return prev + `
-      <h4>${ item.position } @ ${ item.company }</h4>
-      <div class="experiences__time">${ item.time }</div>
-      <div class="experiences__description">${ item.description }</div>
+      <div class="intro__item experiences">
+        <h4>${ item.position } @ ${ item.company }</h4>
+        <div class="experiences__time">${ item.time }</div>
+        <div class="experiences__description">${ item.description }</div>
+      </div>
     `;
   }, '');
 
@@ -28,7 +30,7 @@ const setProjects = function(projects) {
   let body = projects.reduce((prev, item) => {
     return prev + `
       <h4>${ item.title }</h4>
-      <div class="projects__link">${ item.link }</div>
+      <div class="projects__link">预览网址：<a href="${item.link}" target="_blank">${ item.link }</a></div>
       <div class="projects__description">${ item.description }</div>
     `;
   }, '');
@@ -54,7 +56,7 @@ const setContact = function(contact) {
     <div class="intro">
       <h3>联系方式</h3>
       <div class="intro__detail">
-        ${ body }
+        <ul>${ body }</ul>
       </div>
     </div>
   ` : '';
@@ -92,7 +94,7 @@ const setBasic = function(basic) {
     <div class="intro">
       <h3>基本信息</h3>
       <div class="intro__detail">
-        ${ body }
+        <ul>${ body }</ul>
       </div>
     </div>
   ` : '';
@@ -121,7 +123,7 @@ const setSkills = function(skills) {
     <div class="intro">
       <h3>技能</h3>
       <div class="intro__detail">
-        ${ body }
+        <ul>${ body }</ul>
       </div>
     </div>
   `: '';
@@ -136,7 +138,7 @@ const setActivities = function(activities) {
     <div class="intro">
       <h3>活动经历</h3>
       <div class="intro__detail">
-        ${ body }
+        <ul>${ body }</ul>
       </div>
     </div>
   ` : '';
@@ -149,12 +151,12 @@ document.querySelector('.wrapper').innerHTML = `
       <span>${ data.job }</span>
       <span>${ data.city }</span>
     </header>
+    <div class="basis-info">
+        ${ setBasic(data.basic) }
+        ${ setContact(data.contact) }
+    </div>
     ${ setExperiences(data.experiences) }
     ${ setProjects(data.projects) }
-  </div>
-  <div class="sidebar">
-    ${ setContact(data.contact) }
-    ${ setBasic(data.basic) }
     ${ setSkills(data.skills) }
     ${ setActivities(data.activities) }
   </div>
