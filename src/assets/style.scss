@@ -1,0 +1,128 @@
+html, body {
+  background: #FEFEFE;
+  height: 100%;
+  font-family: Arial, 'Simsun', sans-serif;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 8px 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",  Arial, sans-serif;
+}
+
+p, span, div {
+  font-family: Arial, 'Simsun', sans-serif;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+
+  &:active {
+    color: #333;
+  }
+
+  &:hover {
+    color: #555;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  min-height: 100%;
+  padding: 20px;
+  margin: 40px;
+  border: 3px solid #ddd;
+  box-shadow: 2px 3px 3px #888;
+}
+
+.container {
+  flex: 2.5;
+  min-height: 100%;
+  padding: 10px;
+}
+
+.sidebar {
+  flex: 1;
+  min-height: 100%;
+  border-left: 1px dashed #ccc;
+  padding: 0 10px;
+}
+
+.intro {
+  margin-top: 32px;
+
+  .intro__detail {
+    margin-top: 24px;
+    padding-left: 16px;
+    border-left: 3px solid #ccc;
+    line-height: normal;
+
+    .intro__item {
+      margin-top: 16px;
+    }
+  }
+}
+
+.basis-info {
+  display: flex;
+  flex-wrap: wrap;
+
+  .intro {
+    width: 50%;
+  }
+}
+
+.experiences {
+  h4 {
+    display: inline-block;
+  }
+  .experiences__time {
+    display: inline-block;
+    font-weight: bold;
+    
+    &::before {
+      content: '[';
+      margin: 0 4px;
+    }
+
+    &::after {
+      content: ']';
+      margin: 0 4px;
+    }
+  }
+}
+
+.projects__link {
+  margin: 4px 0;
+}
+
+@media print {
+  .wrapper {
+    margin: 0;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  @page {
+    size: A4;
+  }
+
+  div {
+    page-break-before: avoid;
+    page-break-inside: avoid;
+  }
+}

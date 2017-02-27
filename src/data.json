@@ -1,0 +1,74 @@
+{
+  "name": "Sky Ao",
+  "job": "前端开发",
+  "city": "上海",
+  "contact": {
+    "Name": "Beichu Zhang",
+    "Phone": "138***28732",
+    "Email": "csvwolf@qq.com",
+    "WeChat": "csvwolf"
+  },
+  "basic": {
+    "gender": "女",
+    "languages": {
+      "English": "六级"
+    },
+    "education": [
+      {
+        "degree": "本科",
+        "major": "计算机科学与技术",
+        "school": "上海海事大学"
+      }
+    ],
+    "options": {
+      "GitHub": "https://github.com/csvwolf",
+      "Blog": "http://codesky.me/"
+    }
+  },
+  "activities": [
+    "校编程大赛一等奖",
+    "临港三校App制作大赛一等奖",
+    "上海市计算机应用能力大赛三等奖",
+    "参与过ACM EC-Final - 上大两日游",
+    "社团服务器运维",
+    "微软技术俱乐部社长",
+    "连续两年一等奖学金"
+  ],
+  "skills": {
+    "HTML/CSS": "",
+    "JavaScript": ""
+  },
+  "experiences": [
+    {
+      "position": "前端开发",
+      "company": "饿了么",
+      "time": "2016.7 - 至今",
+      "description": "打杂中。",
+      "coreSkill": ["Vue", "ES6", "Node.js"]
+    },
+    {
+      "position": "前端开发",
+      "company": "Venvy 云视链",
+      "time": "2014.12 - 2015.03",
+      "description": "主要进行第一版HTML5播放器的开发，解决了视频分片切换问题，实现进度条跳转，缓解内存泄露问题（下降10%），解决了一些IE兼容问题，同时也进行了一些播放页相关组件开发。",
+      "coreSkill": ["Jade", "Stylus", "jQuery"]
+    }
+  ],
+  "projects": [
+    {
+      "title": "全球港口动态",
+      "link": "http://222.44.90.83:3005/",
+      "description": "进行大前端技术改建，重写UI，自适应分辨率，解决港口加载慢的问题，新闻由后端爬取。"
+    },
+    {
+      "title": "Sky_MicroBlog",
+      "link": "https://github.com/csvwolf/Sky-MicroBlog",
+      "description": "使用Pjax技术，在Ajax下也能够正常的进行后退和前进的操作，能够直接通过url打开，使用原生PHP和jQuery实现，数据库使用PDO。"
+    },
+    {
+      "title": "SkyTips",
+      "link": "http://test.codesky.me/skytips/",
+      "description": "一个可以仅由CSS3驱动的Tooltip轮子，标签设计参考Bootstrap，后在实习期间播放页面也成功的有所应用。"
+    }
+  ]
+}
