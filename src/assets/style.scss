@@ -42,7 +42,10 @@ a {
   display: flex;
   flex-wrap: wrap-reverse;
   min-height: 100%;
-  padding: 0 20px;
+  padding: 20px;
+  margin: 40px;
+  border: 3px solid #ddd;
+  box-shadow: 2px 3px 3px #888;
 }
 
 .container {
@@ -104,4 +107,22 @@ a {
 
 .projects__link {
   margin: 4px 0;
+}
+
+@media print {
+  .wrapper {
+    margin: 0;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  @page {
+    size: A4;
+  }
+
+  div {
+    page-break-before: avoid;
+    page-break-inside: avoid;
+  }
 }
